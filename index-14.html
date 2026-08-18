@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0047FF">
+<title>AI Chat Support Agent | OrionPulse AI Workforce</title>
+<meta name="description" content="AI Chat Support Agent by OrionPulse — an intelligent frontline support workforce for customer conversations, lead capture, qualification, routing, follow-up and business growth.">
+<link rel="canonical" href="https://orionpulse.co.in/ai-workforce/chat-support-agent/">
+<meta property="og:title" content="AI Chat Support Agent | OrionPulse">
+<meta property="og:description" content="Turn Chat conversations into faster support, qualified opportunities and measurable customer growth.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orionpulse.co.in/ai-workforce/chat-support-agent/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Chat Support Agent | OrionPulse">
+<meta name="twitter:description" content="Frontline AI support for Chat conversations, customer assistance, lead capture and intelligent escalation.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"OrionPulse AI Chat Support Agent",
+  "applicationCategory":"BusinessApplication",
+  "description":"An AI frontline support agent designed to handle Chat customer conversations, answer authorized questions, capture leads, route issues, escalate sensitive cases and produce customer intelligence.",
+  "brand":{"@type":"Brand","name":"OrionPulse"},
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Demo and custom deployment"}
+}
+</script>
+<style>
+:root{
+  --blue:#0047ff;--blue2:#2d6bff;--ink:#07080c;--muted:#6f7480;--line:#e7e9ee;
+  --soft:#f5f7fb;--white:#fff;--green:#18a56b;--amber:#b77900;--red:#d84b4b;
+  --shadow:0 18px 60px rgba(10,20,50,.09);--radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid rgba(0,71,255,.35);outline-offset:3px}
+.container{width:min(1180px,calc(100% - 36px));margin:auto}
+.topbar{height:34px;background:#050608;color:#b9bec9;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.topbar b{color:#fff}
+.nav{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);z-index:50}
+.navin{display:flex;align-items:center;justify-content:space-between;width:min(1280px,calc(100% - 36px));margin:auto}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.04em}
+.logo{width:30px;height:30px;border-radius:10px;background:var(--blue);position:relative;box-shadow:0 8px 22px rgba(0,71,255,.25)}
+.logo:after{content:"";position:absolute;width:8px;height:8px;border:2px solid #fff;border-radius:50%;left:9px;top:9px}
+.navlinks{display:flex;gap:22px;color:#626875;font-size:13px}
+.navlinks a:hover{color:#111}
+.navcta{display:flex;gap:9px}
+.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:750;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn.primary{background:var(--blue);color:#fff;box-shadow:0 10px 26px rgba(0,71,255,.2)}
+.btn.primary:hover{transform:translateY(-1px);background:#003bd8}
+.btn.ghost{background:#fff;border:1px solid #dfe2e8}
+.btn.dark{background:#08090c;color:#fff}
+.btn.small{padding:9px 12px;font-size:12px}
+.hero{padding:92px 0 62px;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;width:580px;height:580px;border-radius:50%;background:radial-gradient(circle,rgba(0,71,255,.12),transparent 68%);right:-160px;top:-220px;pointer-events:none}
+.eyebrow{font-size:11px;font-weight:850;letter-spacing:.16em;color:var(--blue);text-transform:uppercase}
+h1{font-size:clamp(44px,7vw,82px);line-height:.94;letter-spacing:-.065em;max-width:880px;margin:17px 0 24px}
+.hero p{font-size:20px;color:#5e6470;max-width:720px}
+.heroactions{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0}
+.proofrow{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.pill{border:1px solid var(--line);background:#fff;padding:8px 11px;border-radius:999px;font-size:11px;color:#59606c}
+.section{padding:82px 0}
+.section.alt{background:var(--soft)}
+.sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
+.kicker{font-size:11px;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:.15em}
+h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.05em;line-height:1.02;margin:9px 0 0}
+.lead{color:var(--muted);max-width:640px}
+.grid{display:grid;gap:16px}
+.grid3{grid-template-columns:repeat(3,1fr)}
+.grid4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 8px 35px rgba(10,20,50,.035)}
+.card.dark{background:#090a0e;color:#fff;border-color:#171920}
+.card h3{margin:0 0 7px;font-size:17px;letter-spacing:-.02em}
+.card p{margin:0;color:var(--muted);font-size:13px}
+.card.dark p{color:#a9afba}
+.icon{width:39px;height:39px;border-radius:12px;background:#edf2ff;color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:17px}
+.stat{font-size:34px;font-weight:850;letter-spacing:-.06em}
+.statlabel{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.arch{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.pipeline{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.step{padding:10px 13px;border:1px solid #dfe3ea;border-radius:999px;font-size:12px;background:#fff}
+.step.active{border-color:#b9c9ff;background:#eef3ff;color:var(--blue);font-weight:800}
+.console{background:#08090c;color:#fff;border-radius:28px;padding:20px;box-shadow:var(--shadow);border:1px solid #171a22}
+.consoletop{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.live{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#aeb5c2}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#31c98a;margin-right:7px;box-shadow:0 0 0 4px rgba(49,201,138,.1)}
+.workspace{display:grid;grid-template-columns:260px 1fr;gap:14px}
+.side{background:#0d0f14;border:1px solid #1b1f28;border-radius:18px;padding:12px}
+.side button{width:100%;text-align:left;border:0;background:transparent;color:#a9afba;padding:11px;border-radius:10px;font-size:12px}
+.side button.active,.side button:hover{background:#171b24;color:#fff}
+.mainpanel{background:#0d0f14;border:1px solid #1b1f28;border-radius:18px;padding:18px}
+.demohead{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.demo-badge{font-size:10px;background:#1a1f2a;color:#b8c1d1;padding:6px 8px;border-radius:999px}
+.chatbox{margin-top:14px;display:grid;gap:10px}
+.msg{max-width:78%;padding:12px 14px;border-radius:15px;font-size:12px}
+.msg.user{margin-left:auto;background:#0047ff;color:#fff;border-bottom-right-radius:5px}
+.msg.ai{background:#171b23;color:#dce1e9;border-bottom-left-radius:5px}
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:13px}
+.insight{background:#11141b;border:1px solid #222733;border-radius:13px;padding:12px}
+.insight small{color:#7f8795;text-transform:uppercase;letter-spacing:.08em;font-size:9px}
+.insight strong{display:block;margin-top:5px;font-size:14px}
+.consoleactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.consoleactions button{background:#fff;color:#111;border:0;border-radius:10px;padding:9px 12px;font-size:11px;font-weight:800}
+.onboard{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:11px;font-weight:800;margin-bottom:6px;color:#444b56}
+.field input,.field select,.field textarea{width:100%;border:1px solid #dfe2e8;background:#fafbfc;border-radius:11px;padding:11px 12px;color:#111;outline:none}
+.field textarea{min-height:90px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#8ca8ff;box-shadow:0 0 0 4px rgba(0,71,255,.08)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.checks{display:flex;gap:8px;flex-wrap:wrap}
+.check{border:1px solid #dfe2e8;padding:9px 11px;border-radius:10px;font-size:11px;background:#fff}
+.check input{accent-color:var(--blue)}
+.result{background:#08090c;color:#fff;border-radius:24px;padding:24px;min-height:100%}
+.resultgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.rbox{background:#11141a;border:1px solid #20242e;border-radius:15px;padding:14px}
+.rbox .label{font-size:9px;color:#808895;text-transform:uppercase;letter-spacing:.1em}
+.rbox strong{display:block;margin-top:5px}
+.score{font-size:48px;font-weight:900;letter-spacing:-.07em}
+.bar{height:7px;background:#252a33;border-radius:99px;overflow:hidden;margin-top:9px}
+.bar span{display:block;height:100%;width:82%;background:var(--blue);border-radius:99px}
+.tag{display:inline-block;padding:5px 8px;border-radius:999px;background:#eaf0ff;color:var(--blue);font-size:10px;font-weight:800;margin:3px}
+.how{counter-reset:how}
+.howcard{position:relative;padding-left:68px}
+.howcard:before{counter-increment:how;content:counter(how);position:absolute;left:21px;top:21px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:900}
+.table{width:100%;border-collapse:collapse;font-size:12px}
+.table th,.table td{text-align:left;padding:13px;border-bottom:1px solid var(--line)}
+.table th{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:#7b818c}
+.status{font-size:10px;font-weight:800;padding:5px 8px;border-radius:999px}
+.status.ready{background:#edf3ff;color:var(--blue)}
+.status.approved{background:#eaf8f2;color:#12805a}
+.status.review{background:#fff5dd;color:#9a6700}
+.workflow{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;align-items:center}
+.wf{border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center;font-size:10px;background:#fff}
+.wf b{display:block;font-size:12px;margin-bottom:3px}
+.arrow{color:#9aa0aa;text-align:center}
+.faq{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:800;cursor:pointer}
+details p{color:var(--muted);font-size:13px;max-width:800px}
+.cta{background:#07080b;color:#fff;border-radius:30px;padding:55px;position:relative;overflow:hidden}
+.cta:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(0,71,255,.5),transparent 68%);right:-160px;top:-180px}
+.cta>*{position:relative;z-index:1}
+.cta h2{max-width:760px}
+.footer{padding:34px 0;border-top:1px solid var(--line);color:#777d88;font-size:12px}
+.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.toast{position:fixed;right:18px;bottom:18px;background:#08090c;color:#fff;padding:13px 16px;border-radius:13px;box-shadow:var(--shadow);font-size:12px;opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s;z-index:100}
+.toast.show{opacity:1;transform:none}
+.modal{position:fixed;inset:0;background:rgba(5,7,12,.58);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:18px;z-index:90}
+.modal.open{display:flex}
+.modalbox{background:#fff;border-radius:24px;max-width:620px;width:100%;padding:26px;box-shadow:0 30px 100px rgba(0,0,0,.25)}
+.modalhead{display:flex;justify-content:space-between;align-items:start}
+.close{border:0;background:#f0f2f5;width:35px;height:35px;border-radius:10px}
+.notice{padding:12px 14px;border-radius:12px;background:#f1f5ff;border:1px solid #d9e3ff;color:#3154a8;font-size:11px}
+.mini{font-size:11px;color:#8a909b}
+.reduced *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:900px){
+ .navlinks{display:none}.hero{padding-top:64px}.grid3,.grid4{grid-template-columns:1fr 1fr}
+ .arch,.onboard{grid-template-columns:1fr}.workspace{grid-template-columns:1fr}.side{display:flex;overflow:auto;gap:5px}.side button{min-width:max-content}
+ .workflow{grid-template-columns:1fr 1fr}.arrow{display:none}
+}
+@media(max-width:600px){
+ .container{width:min(100% - 24px,1180px)}.nav{height:64px}.navcta .btn.ghost{display:none}
+ h1{font-size:48px}.hero p{font-size:17px}.section{padding:60px 0}.grid3,.grid4,.insights,.resultgrid,.two{grid-template-columns:1fr}
+ .cta{padding:30px 22px}.card,.form,.result{padding:18px}.msg{max-width:90%}.topbar{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.step{padding:24px;border:1px solid rgba(0,71,255,.14);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(246,248,255,.9));box-shadow:0 14px 40px rgba(10,25,60,.06)}
+.step b{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;background:#0047FF;color:#fff;font-size:12px}
+.step h3{margin:18px 0 8px}.step p{margin:0;color:#657086;line-height:1.7}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><b>ORIONPULSE AI WORKFORCE</b>&nbsp; / &nbsp;PRECISION IS THE NEW LUXURY.</div>
+
+<header class="nav">
+  <div class="navin">
+    <a class="brand" href="#top" aria-label="OrionPulse home"><span class="logo"></span><span>OrionPulse</span></a>
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a href="#agent">Agent</a><a href="#intelligence">Intelligence</a><a href="#how">How It Works</a><a href="#workforce">Workforce</a><a href="#reports">Reports</a>
+    </nav>
+    <div class="navcta"><a class="btn ghost small" href="#contact">Build My AI Workforce</a><button class="btn primary small" onclick="startAgent()">Start Agent</button></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="agent">
+<div class="container">
+  <div class="eyebrow">Customer Support AI Agents / Frontline Support</div>
+  <h1>AI Chat<br>Support Agent.</h1>
+  <p>Your always-on frontline support workforce for Chat. Understand customer intent, answer from approved knowledge, capture opportunities, qualify conversations, route complex cases and turn every useful interaction into business intelligence.</p>
+  <div class="heroactions">
+    <button class="btn primary" onclick="startAgent()">Start Agent →</button>
+    <a class="btn ghost" href="#how">See How It Works</a>
+    <a class="btn ghost" href="https://wa.me/919862903690?text=Hi%20OrionPulse%2C%20I%27m%20interested%20in%20the%20AI%20Chat%20Support%20Agent." target="_blank" rel="noopener">Talk on Chat ↗</a>
+  </div>
+  <div class="proofrow">
+    <span class="pill">24/7 frontline coverage</span><span class="pill">Knowledge-grounded replies</span><span class="pill">Lead capture</span><span class="pill">Human escalation</span><span class="pill">Central BI ready</span>
+  </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">What this digital worker does</div><h2>Support is a growth signal.</h2></div><p class="lead">The agent does not treat Chat as a message inbox. It treats conversations as structured business information that can improve support, retention, sales and operations.</p></div>
+ <div class="grid grid4">
+  <article class="card"><div class="icon">01</div><h3>Understand</h3><p>Detect intent, urgency, sentiment, language, customer stage and requested outcome.</p></article>
+  <article class="card"><div class="icon">02</div><h3>Resolve</h3><p>Answer routine questions using approved business knowledge and conversation context.</p></article>
+  <article class="card"><div class="icon">03</div><h3>Qualify</h3><p>Recognize buying signals, capture consented lead details and route opportunities.</p></article>
+  <article class="card"><div class="icon">04</div><h3>Learn</h3><p>Convert recurring questions, friction and demand signals into actionable intelligence.</p></article>
+ </div>
+</div>
+</section>
+
+<section class="section" id="intelligence">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Frontline intelligence console</div><h2>A specialist, not another chatbot.</h2></div><p class="lead">Demo Mode below shows the operating model. Production deployment connects authorized Chat infrastructure, Gemini, business knowledge, CRM and workflows through a secure backend.</p></div>
+ <div class="console">
+  <div class="consoletop"><div><span class="dot"></span><span class="live">Agent online · Demo Mode</span></div><span class="demo-badge">SIMULATED DATA</span></div>
+  <div class="workspace">
+   <aside class="side" aria-label="Agent workspace">
+    <button class="active" onclick="switchPanel(this,'overview')">Intelligence Overview</button>
+    <button onclick="switchPanel(this,'conversations')">Conversations</button>
+    <button onclick="switchPanel(this,'knowledge')">Knowledge</button>
+    <button onclick="switchPanel(this,'opportunities')">Opportunities</button>
+    <button onclick="switchPanel(this,'actions')">Actions</button>
+    <button onclick="switchPanel(this,'memory')">Memory</button>
+   </aside>
+   <section class="mainpanel" id="demoPanel">
+    <div class="demohead"><div><div class="mini">LIVE SIMULATION</div><h3 style="margin:3px 0">Conversation Intelligence</h3></div><span class="demo-badge">Human approval where required</span></div>
+    <div class="chatbox">
+      <div class="msg user">Hi, I want to know which plan is best for my business. We also need help automating follow-ups.</div>
+      <div class="msg ai">I can help compare the available options and identify the right next step. I can also flag your automation requirement for the growth team. I’ll only use approved business information and will ask for missing details rather than guessing.</div>
+    </div>
+    <div class="insights">
+      <div class="insight"><small>Intent</small><strong>Purchase + Automation</strong></div>
+      <div class="insight"><small>Opportunity</small><strong>High-value signal</strong></div>
+      <div class="insight"><small>Next action</small><strong>Qualify → Route</strong></div>
+    </div>
+    <div class="consoleactions">
+      <button onclick="toast('Demo action prepared: qualification task.')">Prepare Qualification</button>
+      <button onclick="toast('Demo report generated.')">Generate Report</button>
+      <button onclick="toast('Human approval required before external action.')">Request Approval</button>
+    </div>
+   </section>
+  </div>
+ </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Intelligence architecture</div><h2>Information → Intelligence → Action.</h2></div></div>
+ <div class="arch">
+  <div class="card">
+   <h3>Digital worker loop</h3>
+   <p>Every conversation can move through a controlled lifecycle instead of disappearing into an inbox.</p>
+   <div class="pipeline">
+    <span class="step active">Perception</span><span class="step">Analysis</span><span class="step">Reasoning</span><span class="step">Decision</span><span class="step">Action</span><span class="step">Memory</span><span class="step">Learning</span><span class="step">Reporting</span>
+   </div>
+  </div>
+  <div class="card dark">
+   <div class="mini">FUTURE BACKEND CONTRACT</div>
+   <h3 style="margin-top:8px">Secure integration points</h3>
+   <p style="margin-bottom:14px">No API keys or service credentials belong in this GitHub Pages frontend.</p>
+   <code style="font-size:11px;line-height:2;color:#cfd6e3">/api/agent/analyze<br>/api/agent/run<br>/api/agent/action<br>/api/agent/status<br>/api/agent/memory<br>/api/agent/report</code>
+  </div>
+ </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Business intelligence</div><h2>Every conversation can become a signal.</h2></div></div>
+ <div class="grid grid3">
+  <article class="card"><div class="stat">Intent</div><div class="statlabel">Conversation classification</div><p style="margin-top:12px">Support, sales, billing, onboarding, complaint, renewal, product question, urgent issue and other authorized categories.</p></article>
+  <article class="card"><div class="stat">Voice</div><div class="statlabel">Customer sentiment</div><p style="margin-top:12px">Detect frustration, uncertainty, confidence and urgency to prioritize the right response path.</p></article>
+  <article class="card"><div class="stat">Signal</div><div class="statlabel">Growth intelligence</div><p style="margin-top:12px">Find recurring objections, product gaps, demand patterns, missed opportunities and retention risks.</p></article>
+ </div>
+ <div class="card" style="margin-top:16px">
+  <h3>Evidence discipline</h3>
+  <div style="margin-top:12px"><span class="tag">FACT</span><span class="tag">EVIDENCE</span><span class="tag">ASSUMPTION</span><span class="tag">UNKNOWN</span><span class="tag">RECOMMENDATION</span><span class="tag">ACTION</span></div>
+  <p style="margin-top:10px">The agent must distinguish verified business information from inference. If the required information is unavailable, it reports: <b>Unknown — requires verification.</b></p>
+ </div>
+</div>
+</section>
+
+<section class="section" id="onboarding">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Activate your digital worker</div><h2>Give the agent its business context.</h2></div><p class="lead">This prototype collects only the context needed to design a useful frontline support system. No credentials are requested here.</p></div>
+ <div class="onboard">
+  <form class="form" id="agentForm" onsubmit="runAnalysis(event)">
+   <div class="two">
+    <div class="field"><label for="business">Business name</label><input id="business" required placeholder="Your business"></div>
+    <div class="field"><label for="industry">Industry</label><input id="industry" placeholder="e.g. SaaS, retail, services"></div>
+   </div>
+   <div class="two">
+    <div class="field"><label for="website">Website</label><input id="website" type="url" placeholder="https://example.com"></div>
+    <div class="field"><label for="location">Primary market</label><input id="location" placeholder="City / country / market"></div>
+   </div>
+   <div class="field"><label for="goal">Primary outcome</label>
+    <select id="goal"><option>Faster customer support</option><option>Reduce missed Chat leads</option><option>Improve customer retention</option><option>Qualify and route sales opportunities</option><option>All of the above</option></select>
+   </div>
+   <div class="field"><label>Current priorities</label><div class="checks">
+    <label class="check"><input type="checkbox" checked> FAQs</label><label class="check"><input type="checkbox"> Lead capture</label><label class="check"><input type="checkbox"> CRM routing</label><label class="check"><input type="checkbox"> Human escalation</label><label class="check"><input type="checkbox"> Follow-up</label>
+   </div></div>
+   <div class="field"><label for="challenge">Biggest support challenge</label><textarea id="challenge" placeholder="What is currently going wrong or taking too much time?"></textarea></div>
+   <div class="notice">Demo Mode only. Production connections should be authorized through secure backend integrations and approved Chat infrastructure.</div>
+   <button class="btn primary" style="width:100%;margin-top:14px">Run Frontline Intelligence →</button>
+  </form>
+  <div class="result" id="result">
+   <div class="mini">AGENT READINESS</div><div class="score" id="score">—</div><p id="resultText" style="color:#aeb5c0">Complete the context form to generate a simulated readiness assessment.</p>
+   <div class="resultgrid">
+    <div class="rbox"><div class="label">Knowledge</div><strong id="rKnowledge">Waiting</strong></div>
+    <div class="rbox"><div class="label">Routing</div><strong id="rRouting">Waiting</strong></div>
+    <div class="rbox"><div class="label">Lead signal</div><strong id="rLead">Waiting</strong></div>
+    <div class="rbox"><div class="label">Human control</div><strong>Required</strong></div>
+   </div>
+   <div style="margin-top:18px"><div class="mini">READINESS INDICATOR</div><div class="bar"><span id="bar" style="width:0"></span></div></div>
+   <div style="margin-top:18px"><button class="btn small" onclick="toast('Demo report prepared. Connect backend to persist it.')">Generate Intelligence Report</button></div>
+  </div>
+ </div>
+</div>
+</section>
+
+<section class="section alt" id="how">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">How to use</div><h2>From first message to measurable action.</h2></div><p class="lead">A business can understand the operating model before connecting its live channels.</p></div>
+ <div class="grid grid3 how">
+  <article class="card howcard"><h3>Connect authorized sources</h3><p>Provide approved knowledge, policies, FAQs, products, services, customer workflows and the Chat channel through secure integrations.</p></article>
+  <article class="card howcard"><h3>Define support policy</h3><p>Set what the agent can answer, what requires verification, what requires human approval and where conversations should be routed.</p></article>
+  <article class="card howcard"><h3>Let it understand</h3><p>Incoming conversations are classified by intent, context, urgency and business relevance before a response path is selected.</p></article>
+  <article class="card howcard"><h3>Resolve or escalate</h3><p>Routine requests can be handled from approved knowledge. Sensitive or uncertain cases can be prepared for human review.</p></article>
+  <article class="card howcard"><h3>Capture opportunities</h3><p>When a conversation reveals legitimate buying intent, the agent can prepare a qualification or CRM handoff subject to authorization.</p></article>
+  <article class="card howcard"><h3>Learn from patterns</h3><p>Aggregate recurring questions, friction, requests and outcomes into the OrionPulse central intelligence layer.</p></article>
+ </div>
+</div>
+</section>
+
+<section class="section" id="workforce">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">OrionPulse workforce</div><h2>Frontline support connects to the rest of the business.</h2></div></div>
+ <div class="workflow">
+  <div class="wf"><b>Chat</b>Conversation</div><div class="arrow">→</div>
+  <div class="wf"><b>Support</b>Intent + context</div><div class="arrow">→</div>
+  <div class="wf"><b>Qualification</b>Opportunity</div><div class="arrow">→</div>
+  <div class="wf"><b>CRM</b>Handoff</div>
+ </div>
+ <div class="grid grid3" style="margin-top:16px">
+  <article class="card"><h3>Knowledge Base Agent</h3><p>Keep approved answers, policies and source evidence current.</p></article>
+  <article class="card"><h3>AI Complaint Resolution Agent</h3><p>Escalate and coordinate higher-risk customer issues with controlled workflows.</p></article>
+  <article class="card"><h3>AI Lead Qualification Agent</h3><p>Turn legitimate buying signals into structured opportunities for the growth workforce.</p></article>
+ </div>
+</div>
+</section>
+
+<section class="section alt" id="actions">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Action center</div><h2>Nothing important should stop at insight.</h2></div><p class="lead">Actions remain controlled. Sensitive external actions require authorization and can be reviewed before execution.</p></div>
+ <div class="card">
+  <table class="table">
+   <thead><tr><th>Signal</th><th>Recommended action</th><th>State</th><th>Next worker</th></tr></thead>
+   <tbody>
+    <tr><td>High buying intent</td><td>Prepare qualification + CRM handoff</td><td><span class="status ready">Ready for Approval</span></td><td>Lead Qualification</td></tr>
+    <tr><td>Unknown product answer</td><td>Request knowledge verification</td><td><span class="status review">Review</span></td><td>Knowledge Base</td></tr>
+    <tr><td>Complex support issue</td><td>Escalate with conversation summary</td><td><span class="status ready">Suggested</span></td><td>Complaint Resolution</td></tr>
+    <tr><td>Recurring friction</td><td>Create improvement insight</td><td><span class="status approved">Approved</span></td><td>Reporting / BI</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div>
+</section>
+
+<section class="section" id="reports">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Central dashboard readiness</div><h2>Designed to become business intelligence.</h2></div></div>
+ <div class="grid grid4">
+  <article class="card"><div class="stat">CSAT</div><div class="statlabel">Customer experience</div></article>
+  <article class="card"><div class="stat">FRT</div><div class="statlabel">First response time</div></article>
+  <article class="card"><div class="stat">FCR</div><div class="statlabel">First contact resolution</div></article>
+  <article class="card"><div class="stat">CVR</div><div class="statlabel">Conversation → opportunity</div></article>
+ </div>
+ <div class="card" style="margin-top:16px">
+  <h3>Future event stream</h3>
+  <p style="margin:9px 0">The frontend is prepared for privacy-conscious analytics events such as:</p>
+  <div><span class="tag">agent_started</span><span class="tag">conversation_classified</span><span class="tag">knowledge_used</span><span class="tag">escalation_created</span><span class="tag">lead_signal_detected</span><span class="tag">action_approved</span><span class="tag">action_executed</span><span class="tag">report_generated</span><span class="tag">agent_handoff</span></div>
+ </div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Trust & governance</div><h2>Fast does not mean uncontrolled.</h2></div></div>
+ <div class="grid grid3">
+  <article class="card"><h3>Human approval</h3><p>Refunds, sensitive claims, policy exceptions and other consequential actions can require explicit review.</p></article>
+  <article class="card"><h3>Evidence first</h3><p>Responses should be grounded in authorized knowledge. The agent should not invent policies, prices, outcomes or sources.</p></article>
+  <article class="card"><h3>Privacy by architecture</h3><p>Authentication, secrets, private data access and platform permissions remain outside this public frontend.</p></article>
+ </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+ <div class="sectionhead"><div><div class="kicker">Common questions</div><h2>Understand the agent before deploying it.</h2></div></div>
+ <div class="faq">
+  <details><summary>Is this a real Chat automation already?</summary><p>This GitHub Pages version is a realistic Demo Mode and architecture-ready frontend. Live Chat messaging requires an authorized Chat integration and secure backend processing.</p></details>
+  <details><summary>Can it answer any customer question?</summary><p>No. A production agent should answer from approved knowledge and business rules, clearly identify unknowns, and escalate when information or authorization is insufficient.</p></details>
+  <details><summary>Can it generate leads?</summary><p>Yes, as a support-to-growth capability. It can detect legitimate buying signals, ask permitted qualification questions and prepare structured handoffs to a sales or CRM workflow.</p></details>
+  <details><summary>Can it work with other OrionPulse agents?</summary><p>Yes. Its architecture supports structured handoffs containing business context, evidence, objective, priority, action, status, confidence and next-agent information.</p></details>
+  <details><summary>What happens when the agent is unsure?</summary><p>It should not guess. The system can return “Unknown — requires verification,” request clarification, consult authorized knowledge or route the conversation to a human.</p></details>
+ </div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+ <div class="cta">
+  <div class="eyebrow" style="color:#6d95ff">Build your AI workforce</div>
+  <h2>Turn Chat from an inbox into an intelligent frontline.</h2>
+  <p style="color:#aeb5c0;max-width:650px">OrionPulse can help design a support system that connects customer conversations, knowledge, lead qualification, automation and business intelligence.</p>
+  <div class="heroactions">
+   <a class="btn primary" href="mailto:service@orionpulse.co.in?subject=AI%20Chat%20Support%20Agent%20-%20Custom%20Proposal">Get a Custom Proposal</a>
+   <a class="btn ghost" href="https://wa.me/919862903690?text=Hi%20OrionPulse%2C%20I%20want%20to%20build%20an%20AI%20Chat%20Support%20Agent%20for%20my%20business." target="_blank" rel="noopener">Talk to OrionPulse on Chat</a>
+  </div>
+  <p class="mini" style="color:#777f8d">service@orionpulse.co.in · +91 98629 03690</p>
+ </div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container footerin">
+ <div>© <span id="year"></span> OrionPulse Technologies OPC Private Limited.</div>
+ <div>One Business · One AI Workforce · 100+ Specialized Agents · One Operating System.</div>
+</div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal" id="modal" aria-hidden="true">
+ <div class="modalbox" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modalhead"><div><div class="kicker">Agent onboarding</div><h2 id="modalTitle" style="font-size:30px">Start your frontline agent.</h2></div><button class="close" onclick="closeModal()" aria-label="Close">×</button></div>
+  <p style="color:var(--muted)">Start with your business context. The demo will simulate how the agent analyzes a chat support scenario.</p>
+  <button class="btn primary" onclick="closeModal();document.getElementById('onboarding').scrollIntoView({behavior:'smooth'});setTimeout(()=>document.getElementById('business').focus(),500)">Configure Agent →</button>
+ </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+function toast(msg){
+ const t=$("#toast");t.textContent=msg;t.classList.add("show");
+ clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove("show"),2800);
+}
+function startAgent(){
+ $("#modal").classList.add("open");$("#modal").setAttribute("aria-hidden","false");
+ if(window.innerWidth<700) setTimeout(()=>$("#modal").querySelector(".btn").focus(),100);
+}
+function closeModal(){$("#modal").classList.remove("open");$("#modal").setAttribute("aria-hidden","true")}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+function switchPanel(btn,panel){
+ document.querySelectorAll(".side button").forEach(b=>b.classList.remove("active"));btn.classList.add("active");
+ const content={
+  overview:["Conversation Intelligence","Intent, opportunity, routing and next action are structured before execution."],
+  conversations:["Conversation Queue","Future live view: active conversations, priority, sentiment, SLA and human handoff state."],
+  knowledge:["Knowledge Grounding","Future RAG layer: approved sources, freshness, evidence and answer confidence."],
+  opportunities:["Growth Signals","Future view: buying intent, retention risk, recurring objections and qualified handoffs."],
+  actions:["Action Center","Review, approve, edit, reject, execute, pause or retry authorized actions."],
+  memory:["Agent Memory","Business-specific preferences, resolved patterns and approved learnings with governance."]
+ };
+ const x=content[panel];
+ $("#demoPanel").innerHTML='<div class="demohead"><div><div class="mini">AGENT WORKSPACE</div><h3 style="margin:3px 0">'+x[0]+'</h3></div><span class="demo-badge">Demo Mode</span></div><div class="notice" style="margin-top:16px;background:#151922;border-color:#252b37;color:#cbd2df">'+x[1]+'</div><div class="insights" style="margin-top:14px"><div class="insight"><small>Status</small><strong>Ready</strong></div><div class="insight"><small>Evidence</small><strong>Authorized only</strong></div><div class="insight"><small>Confidence</small><strong>Context dependent</strong></div></div><div class="consoleactions"><button onclick="toast(\'Demo task prepared.\')">Prepare Task</button><button onclick="toast(\'Human approval required for consequential actions.\')">Review</button><button onclick="toast(\'Future backend integration point.\')">Connect Integration</button></div>';
+}
+function runAnalysis(e){
+ e.preventDefault();
+ const business=$("#business").value.trim();
+ if(!business){toast("Business name is required.");return}
+ const website=$("#website").value.trim();
+ const industry=$("#industry").value.trim();
+ const challenge=$("#challenge").value.trim();
+ let score=68+(website?8:0)+(industry?7:0)+(challenge?7:0);
+ score=Math.min(score,90);
+ $("#score").textContent=score+"/100";
+ $("#bar").style.width=score+"%";
+ $("#rKnowledge").textContent=website||industry?"Context available":"Needs knowledge input";
+ $("#rRouting").textContent=challenge?"Workflow can be designed":"Needs workflow context";
+ $("#rLead").textContent="Detectable";
+ $("#resultText").textContent="Simulated readiness only. The score reflects completeness of the supplied setup context, not actual business performance.";
+ toast("Frontline intelligence analysis completed in Demo Mode.");
+ try{localStorage.setItem("orionpulse_chat_agent_context",JSON.stringify({business,website,industry,challenge,timestamp:new Date().toISOString()}))}catch(_){}
+}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",()=>{}));
+$("#year").textContent=new Date().getFullYear();
+</script>
+
+<section class="section" id="how-it-works">
+  <div class="section-head">
+    <div><span class="eyebrow">HOW IT WORKS</span><h2>Turn every conversation into business intelligence.</h2></div>
+    <p>The Chat Support Agent does more than answer questions. It understands intent, protects context, identifies opportunities, and creates structured signals for the OrionPulse intelligence layer.</p>
+  </div>
+  <div class="steps">
+    <article class="step"><b>01</b><h3>Understand</h3><p>Detect intent, customer need, urgency, sentiment and business context.</p></article>
+    <article class="step"><b>02</b><h3>Ground</h3><p>Retrieve approved knowledge and clearly separate known facts from unknowns.</p></article>
+    <article class="step"><b>03</b><h3>Resolve</h3><p>Generate a useful response, next-best action or human escalation.</p></article>
+    <article class="step"><b>04</b><h3>Learn</h3><p>Convert conversations into themes, risks, opportunities and measurable KPIs.</p></article>
+  </div>
+</section>
+</body>
+</html>
